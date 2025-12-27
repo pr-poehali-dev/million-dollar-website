@@ -229,30 +229,42 @@ const Index = () => {
       <section id="faq" className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-4xl font-bold text-center mb-12">Частые вопросы</h2>
-          <Accordion type="single" collapsible className="space-y-4">
-            {[
-              {
-                q: 'Сколько времени нужно, чтобы заработать первый миллион?',
-                a: 'Время зависит от выбранной стратегии, стартового капитала и усилий. В среднем, при правильном подходе это реально за 3-5 лет.',
-              },
-              {
-                q: 'Нужны ли начальные инвестиции?',
-                a: 'Зависит от стратегии. Онлайн-бизнес можно начать с минимальными вложениями ($100-1000), тогда как инвестиции требуют стартовый капитал.',
-              },
-              {
-                q: 'Подходит ли это новичкам?',
-                a: 'Да! У нас есть программы для всех уровней. Начинаем с основ финансовой грамотности и постепенно переходим к продвинутым стратегиям.',
-              },
-              {
-                q: 'Какая поддержка доступна?',
-                a: 'Вы получите доступ к сообществу, еженедельным вебинарам, материалам курсов и личным консультациям с наставниками.',
-              },
-            ].map((item, idx) => (
-              <AccordionItem key={idx} value={`item-${idx}`}>
-                <AccordionTrigger className="text-left font-semibold">{item.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">{item.a}</AccordionContent>
-              </AccordionItem>
-            ))}
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-0">
+              <AccordionTrigger className="text-left font-semibold">
+                Сколько времени нужно, чтобы заработать первый миллион?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Время зависит от выбранной стратегии, стартового капитала и усилий. В среднем, при правильном подходе это реально за 3-5 лет.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left font-semibold">
+                Нужны ли начальные инвестиции?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Зависит от стратегии. Онлайн-бизнес можно начать с минимальными вложениями ($100-1000), тогда как инвестиции требуют стартовый капитал.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left font-semibold">
+                Подходит ли это новичкам?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Да! У нас есть программы для всех уровней. Начинаем с основ финансовой грамотности и постепенно переходим к продвинутым стратегиям.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left font-semibold">
+                Какая поддержка доступна?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Вы получите доступ к сообществу, еженедельным вебинарам, материалам курсов и личным консультациям с наставниками.
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </section>
