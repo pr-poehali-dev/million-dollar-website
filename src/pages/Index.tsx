@@ -59,9 +59,7 @@ const Index = () => {
               Твой первый миллион<br />
               <span className="text-primary">долларов</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Практические стратегии, реальные кейсы и проверенные методы для достижения финансовой свободы
-            </p>
+            <p className="text-xl max-w-2xl mx-auto text-[#000000]">Практические стратегии, реальные кейсы и</p>
             <div className="flex gap-4 justify-center pt-4">
               <Button size="lg" onClick={() => scrollToSection('strategies')}>
                 Начать путь
